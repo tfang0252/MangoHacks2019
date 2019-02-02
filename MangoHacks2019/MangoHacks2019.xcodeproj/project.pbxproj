@@ -22,6 +22,7 @@
 		C960E41F22051E1600FAEAE9 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41622051E1500FAEAE9 /* GoogleAppMeasurement.framework */; };
 		C960E42022051E1600FAEAE9 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41722051E1500FAEAE9 /* GoogleUtilities.framework */; };
 		C960E42122051E1600FAEAE9 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41822051E1500FAEAE9 /* nanopb.framework */; };
+		C960E4262205405700FAEAE9 /* SwiftGoogleTranslate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4242205401000FAEAE9 /* SwiftGoogleTranslate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		C960E41622051E1500FAEAE9 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Carthage/Build/iOS/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
 		C960E41722051E1500FAEAE9 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
 		C960E41822051E1500FAEAE9 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
+		C960E4242205401000FAEAE9 /* SwiftGoogleTranslate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGoogleTranslate.framework; path = Carthage/Build/iOS/SwiftGoogleTranslate.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				C960E41C22051E1600FAEAE9 /* FirebaseAnalytics.framework in Frameworks */,
 				C960E41D22051E1600FAEAE9 /* FirebaseCore.framework in Frameworks */,
 				C960E41E22051E1600FAEAE9 /* FirebaseInstanceID.framework in Frameworks */,
+				C960E4262205405700FAEAE9 /* SwiftGoogleTranslate.framework in Frameworks */,
 				C960E41F22051E1600FAEAE9 /* GoogleAppMeasurement.framework in Frameworks */,
 				C960E42022051E1600FAEAE9 /* GoogleUtilities.framework in Frameworks */,
 				C960E42122051E1600FAEAE9 /* nanopb.framework in Frameworks */,
@@ -102,6 +105,7 @@
 		C960E3FC2205179F00FAEAE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C960E4242205401000FAEAE9 /* SwiftGoogleTranslate.framework */,
 				C960E41022051E1500FAEAE9 /* FIRAnalyticsConnector.framework */,
 				C960E41122051E1500FAEAE9 /* Firebase.framework */,
 				C960E41322051E1500FAEAE9 /* FirebaseAnalytics.framework */,
@@ -134,8 +138,8 @@
 			buildPhases = (
 				C931BEF02204AD2300499240 /* Sources */,
 				C931BEF12204AD2300499240 /* Frameworks */,
-				C931BEF22204AD2300499240 /* Resources */,
 				C960E403220517AA00FAEAE9 /* ShellScript */,
+				C931BEF22204AD2300499240 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +207,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Stevia.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftGoogleTranslate.framework",
 			);
 			outputFileListPaths = (
 			);

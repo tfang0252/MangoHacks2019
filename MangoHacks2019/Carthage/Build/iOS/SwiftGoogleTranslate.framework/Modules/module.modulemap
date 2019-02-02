@@ -1,0 +1,11 @@
+framework module SwiftGoogleTranslate {
+  umbrella header "SwiftGoogleTranslate.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftGoogleTranslate.Swift {
+    header "SwiftGoogleTranslate-Swift.h"
+    requires objc
+}

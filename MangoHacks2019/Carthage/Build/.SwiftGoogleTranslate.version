@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "0.2.1",
+  "iOS" : [
+    {
+      "name" : "SwiftGoogleTranslate",
+      "hash" : "f1303fcc4ad6534ad91d34a7cb2a8b5fe347f3aedff6c758d4ff784422ef871b"
+    }
+  ]
+}
