@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Apollo (0.9.5):
+    - Apollo/Core (= 0.9.5)
+  - Apollo/Core (0.9.5)
+  - ApolloAlamofire (0.3.0):
+    - Alamofire (~> 4)
+    - Apollo (~> 0.9)
+  - Auth0 (1.14.1):
+    - SimpleKeychain
+  - EightBase (0.0.1.3):
+    - Apollo
+    - ApolloAlamofire
+    - Auth0
+  - SimpleKeychain (0.8.1)
+
+DEPENDENCIES:
+  - EightBase
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Apollo
+    - ApolloAlamofire
+    - Auth0
+    - EightBase
+    - SimpleKeychain
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Apollo: 19caf3246d292bbb69ecad1bd098661f78222aba
+  ApolloAlamofire: d986ccac007c74b987f7164f8254c1299c388a7f
+  Auth0: 064dc115cd99eec7334d1cab565f4d974eecac4d
+  EightBase: 48226a4271eac3cce887cf2e6854f0ffb621b891
+  SimpleKeychain: e2485c28d82fcece35e9e41faeac42ebfe614815
+
+PODFILE CHECKSUM: 0ff0b3fd89cb0981a22bfe9d579c6731d9e50a4a
+
+COCOAPODS: 1.5.3

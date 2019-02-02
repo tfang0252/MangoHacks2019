@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Auth0.plist
-   MangoHacks2019
-
-   Created by Tony Fang on 2/2/19.
-   Copyright (c) 2019 Tony Fang. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+  <key>ClientId</key>
+  <string>XYyykN2eXfjJGn5IBcZXj5Kh1vRMgbgN</string>
+  <key>Domain</key>
+  <string>8base.auth0.com</string>
+</dict>
 </plist>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7ED0C4ADAE6A8729D149E211 /* Pods_MangoHacks2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66146B1FBF18F421C37CF9A /* Pods_MangoHacks2019.framework */; };
+		C921FFF62205FE7800ACEB87 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = C921FFF52205FE7800ACEB87 /* Auth0.plist */; };
 		C931BEF82204AD2300499240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931BEF72204AD2300499240 /* AppDelegate.swift */; };
 		C931BEFA2204AD2300499240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931BEF92204AD2300499240 /* ViewController.swift */; };
 		C931BEFD2204AD2300499240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C931BEFB2204AD2300499240 /* Main.storyboard */; };
@@ -14,17 +16,8 @@
 		C931BF022204AD2400499240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C931BF002204AD2400499240 /* LaunchScreen.storyboard */; };
 		C960E40C2205194400FAEAE9 /* Stevia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4092205194400FAEAE9 /* Stevia.framework */; };
 		C960E40E22051A1500FAEAE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C960E40D22051A1500FAEAE9 /* GoogleService-Info.plist */; };
-		C960E41922051E1600FAEAE9 /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41022051E1500FAEAE9 /* FIRAnalyticsConnector.framework */; };
-		C960E41B22051E1600FAEAE9 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41222051E1500FAEAE9 /* FirebaseCoreDiagnostics.framework */; };
-		C960E41C22051E1600FAEAE9 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41322051E1500FAEAE9 /* FirebaseAnalytics.framework */; };
-		C960E41D22051E1600FAEAE9 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41422051E1500FAEAE9 /* FirebaseCore.framework */; };
-		C960E41E22051E1600FAEAE9 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41522051E1500FAEAE9 /* FirebaseInstanceID.framework */; };
-		C960E41F22051E1600FAEAE9 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41622051E1500FAEAE9 /* GoogleAppMeasurement.framework */; };
-		C960E42022051E1600FAEAE9 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41722051E1500FAEAE9 /* GoogleUtilities.framework */; };
-		C960E42122051E1600FAEAE9 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41822051E1500FAEAE9 /* nanopb.framework */; };
 		C960E4262205405700FAEAE9 /* SwiftGoogleTranslate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4242205401000FAEAE9 /* SwiftGoogleTranslate.framework */; };
 		C97979412205C3420084F96A /* PostTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97979402205C3420084F96A /* PostTVCell.swift */; };
-		C97979422205E9720084F96A /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41122051E1500FAEAE9 /* Firebase.framework */; };
 		D01F44932205906D0009C32C /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F44922205906D0009C32C /* ContainerController.swift */; };
 		D01F4495220590910009C32C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F4494220590910009C32C /* HomeController.swift */; };
 		D01F4497220590B30009C32C /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F4496220590B30009C32C /* MenuController.swift */; };
@@ -35,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FA00ACA43DD94BD889D8267 /* Pods-MangoHacks2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoHacks2019.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MangoHacks2019/Pods-MangoHacks2019.debug.xcconfig"; sourceTree = "<group>"; };
+		A8CD19439A2F6B5C43B4CB88 /* Pods-MangoHacks2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoHacks2019.release.xcconfig"; path = "Pods/Target Support Files/Pods-MangoHacks2019/Pods-MangoHacks2019.release.xcconfig"; sourceTree = "<group>"; };
+		C921FFF52205FE7800ACEB87 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		C931BEF42204AD2300499240 /* MangoHacks2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoHacks2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C931BEF72204AD2300499240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C931BEF92204AD2300499240 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +60,7 @@
 		D01F449B220590FC0009C32C /* HomeControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerDelegate.swift; sourceTree = "<group>"; };
 		D01F449D220591170009C32C /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
 		D01F449F22059DE80009C32C /* PostButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostButtons.swift; sourceTree = "<group>"; };
+		F66146B1FBF18F421C37CF9A /* Pods_MangoHacks2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoHacks2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,23 +68,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C960E41C22051E1600FAEAE9 /* FirebaseAnalytics.framework in Frameworks */,
 				C960E40C2205194400FAEAE9 /* Stevia.framework in Frameworks */,
-				C960E41922051E1600FAEAE9 /* FIRAnalyticsConnector.framework in Frameworks */,
-				C960E41B22051E1600FAEAE9 /* FirebaseCoreDiagnostics.framework in Frameworks */,
-				C97979422205E9720084F96A /* Firebase.framework in Frameworks */,
-				C960E41D22051E1600FAEAE9 /* FirebaseCore.framework in Frameworks */,
-				C960E41E22051E1600FAEAE9 /* FirebaseInstanceID.framework in Frameworks */,
 				C960E4262205405700FAEAE9 /* SwiftGoogleTranslate.framework in Frameworks */,
-				C960E41F22051E1600FAEAE9 /* GoogleAppMeasurement.framework in Frameworks */,
-				C960E42022051E1600FAEAE9 /* GoogleUtilities.framework in Frameworks */,
-				C960E42122051E1600FAEAE9 /* nanopb.framework in Frameworks */,
+				7ED0C4ADAE6A8729D149E211 /* Pods_MangoHacks2019.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F2530811ED868E78305FE1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FA00ACA43DD94BD889D8267 /* Pods-MangoHacks2019.debug.xcconfig */,
+				A8CD19439A2F6B5C43B4CB88 /* Pods-MangoHacks2019.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C931BEEB2204AD2300499240 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +93,7 @@
 				C931BEF62204AD2300499240 /* MangoHacks2019 */,
 				C931BEF52204AD2300499240 /* Products */,
 				C960E3FC2205179F00FAEAE9 /* Frameworks */,
+				6F2530811ED868E78305FE1D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +119,7 @@
 				C931BEFE2204AD2400499240 /* Assets.xcassets */,
 				C931BF002204AD2400499240 /* LaunchScreen.storyboard */,
 				C931BF032204AD2400499240 /* Info.plist */,
+				C921FFF52205FE7800ACEB87 /* Auth0.plist */,
 			);
 			path = MangoHacks2019;
 			sourceTree = "<group>";
@@ -140,6 +140,7 @@
 				C960E4082205194400FAEAE9 /* FirebaseDatabase.framework */,
 				C960E4072205194400FAEAE9 /* leveldb-library.framework */,
 				C960E4092205194400FAEAE9 /* Stevia.framework */,
+				F66146B1FBF18F421C37CF9A /* Pods_MangoHacks2019.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,10 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C931BF062204AD2400499240 /* Build configuration list for PBXNativeTarget "MangoHacks2019" */;
 			buildPhases = (
+				68E7968B2E25328397CBB7F1 /* [CP] Check Pods Manifest.lock */,
 				C931BEF02204AD2300499240 /* Sources */,
 				C931BEF12204AD2300499240 /* Frameworks */,
 				C960E403220517AA00FAEAE9 /* ShellScript */,
 				C931BEF22204AD2300499240 /* Resources */,
+				55A81F07016A8A621A59B0C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C921FFF62205FE7800ACEB87 /* Auth0.plist in Resources */,
 				C931BF022204AD2400499240 /* LaunchScreen.storyboard in Resources */,
 				C960E40E22051A1500FAEAE9 /* GoogleService-Info.plist in Resources */,
 				C931BEFF2204AD2400499240 /* Assets.xcassets in Resources */,
@@ -260,18 +264,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		55A81F07016A8A621A59B0C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MangoHacks2019/Pods-MangoHacks2019-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
+				"${BUILT_PRODUCTS_DIR}/ApolloAlamofire/ApolloAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework",
+				"${BUILT_PRODUCTS_DIR}/EightBase/EightBase.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApolloAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Auth0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EightBase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleKeychain.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MangoHacks2019/Pods-MangoHacks2019-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68E7968B2E25328397CBB7F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MangoHacks2019-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C960E403220517AA00FAEAE9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Stevia.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftGoogleTranslate.framework",
-			);
-			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
@@ -439,6 +485,7 @@
 		};
 		C931BF072204AD2400499240 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA00ACA43DD94BD889D8267 /* Pods-MangoHacks2019.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -461,6 +508,7 @@
 		};
 		C931BF082204AD2400499240 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8CD19439A2F6B5C43B4CB88 /* Pods-MangoHacks2019.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

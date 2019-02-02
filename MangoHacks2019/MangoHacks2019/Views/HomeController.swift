@@ -8,8 +8,6 @@
 
 import UIKit
 import Stevia
-import Firebase
-import FirebaseDatabase
 
 class HomeController: UIViewController {
 
@@ -37,19 +35,6 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        ref = Database.database().reference()
-//
-//        var titlesArray = [String]()
-//        self.ref.child("Posts").child("1").setValue(["Looking for Pho recomendations around FIU": "Looking for an authentic vietnamese place that sells Pho!!"])
-//        // Under viewDidLoad
-//
-//        // "events" is the root, and "title" is the key for the data I wanted to build an array with.
-//        ref.child("Posts").child("1").observe(.childAdded) { (snapshot) in
-//            print("\((snapshot.value as? NSDictionary)!)")
-//
-//        }
-
         
         
         view.backgroundColor = .white
