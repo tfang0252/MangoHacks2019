@@ -30,6 +30,8 @@
 		D01F449C220590FC0009C32C /* HomeControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F449B220590FC0009C32C /* HomeControllerDelegate.swift */; };
 		D01F449E220591170009C32C /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F449D220591170009C32C /* MenuOptionCell.swift */; };
 		D01F44A022059DE80009C32C /* PostButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F449F22059DE80009C32C /* PostButtons.swift */; };
+		E6DCF3E42205D2D40077882D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DCF3E32205D2D40077882D /* LoginController.swift */; };
+		E6DCF3F82205F2B90077882D /* gif9.gif in Resources */ = {isa = PBXBuildFile; fileRef = E6DCF3F72205F2B80077882D /* gif9.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		D01F449B220590FC0009C32C /* HomeControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerDelegate.swift; sourceTree = "<group>"; };
 		D01F449D220591170009C32C /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
 		D01F449F22059DE80009C32C /* PostButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostButtons.swift; sourceTree = "<group>"; };
+		E6DCF3E32205D2D40077882D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = SOURCE_ROOT; };
+		E6DCF3F72205F2B80077882D /* gif9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = gif9.gif; path = ../../../../Downloads/gif9.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		C931BEEB2204AD2300499240 = {
 			isa = PBXGroup;
 			children = (
+				E6DCF3F72205F2B80077882D /* gif9.gif */,
 				C960E40F22051C8800FAEAE9 /* Firebase Framework */,
 				C931BEF62204AD2300499240 /* MangoHacks2019 */,
 				C931BEF52204AD2300499240 /* Products */,
@@ -163,6 +168,7 @@
 				D01F44922205906D0009C32C /* ContainerController.swift */,
 				D01F4494220590910009C32C /* HomeController.swift */,
 				D01F4496220590B30009C32C /* MenuController.swift */,
+				E6DCF3E32205D2D40077882D /* LoginController.swift */,
 			);
 			name = Controllers;
 			path = "New Group1";
@@ -246,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C931BF022204AD2400499240 /* LaunchScreen.storyboard in Resources */,
+				E6DCF3F82205F2B90077882D /* gif9.gif in Resources */,
 				C960E40E22051A1500FAEAE9 /* GoogleService-Info.plist in Resources */,
 				C931BEFF2204AD2400499240 /* Assets.xcassets in Resources */,
 				C931BEFD2204AD2300499240 /* Main.storyboard in Resources */,
@@ -290,6 +297,7 @@
 				D01F449E220591170009C32C /* MenuOptionCell.swift in Sources */,
 				D01F4499220590D00009C32C /* MenuOptions.swift in Sources */,
 				D01F449C220590FC0009C32C /* HomeControllerDelegate.swift in Sources */,
+				E6DCF3E42205D2D40077882D /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
