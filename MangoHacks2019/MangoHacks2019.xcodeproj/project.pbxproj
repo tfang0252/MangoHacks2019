@@ -12,10 +12,16 @@
 		C931BEFD2204AD2300499240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C931BEFB2204AD2300499240 /* Main.storyboard */; };
 		C931BEFF2204AD2400499240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C931BEFE2204AD2400499240 /* Assets.xcassets */; };
 		C931BF022204AD2400499240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C931BF002204AD2400499240 /* LaunchScreen.storyboard */; };
-		C960E40A2205194400FAEAE9 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4072205194400FAEAE9 /* leveldb-library.framework */; };
-		C960E40B2205194400FAEAE9 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4082205194400FAEAE9 /* FirebaseDatabase.framework */; };
 		C960E40C2205194400FAEAE9 /* Stevia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4092205194400FAEAE9 /* Stevia.framework */; };
 		C960E40E22051A1500FAEAE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C960E40D22051A1500FAEAE9 /* GoogleService-Info.plist */; };
+		C960E41922051E1600FAEAE9 /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41022051E1500FAEAE9 /* FIRAnalyticsConnector.framework */; };
+		C960E41B22051E1600FAEAE9 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41222051E1500FAEAE9 /* FirebaseCoreDiagnostics.framework */; };
+		C960E41C22051E1600FAEAE9 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41322051E1500FAEAE9 /* FirebaseAnalytics.framework */; };
+		C960E41D22051E1600FAEAE9 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41422051E1500FAEAE9 /* FirebaseCore.framework */; };
+		C960E41E22051E1600FAEAE9 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41522051E1500FAEAE9 /* FirebaseInstanceID.framework */; };
+		C960E41F22051E1600FAEAE9 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41622051E1500FAEAE9 /* GoogleAppMeasurement.framework */; };
+		C960E42022051E1600FAEAE9 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41722051E1500FAEAE9 /* GoogleUtilities.framework */; };
+		C960E42122051E1600FAEAE9 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41822051E1500FAEAE9 /* nanopb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,13 +32,19 @@
 		C931BEFE2204AD2400499240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C931BF012204AD2400499240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C931BF032204AD2400499240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C960E3FD2205179F00FAEAE9 /* Stevia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stevia.framework; path = ../Carthage/Build/iOS/Stevia.framework; sourceTree = "<group>"; };
-		C960E3FE2205179F00FAEAE9 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "leveldb-library.framework"; path = "../Carthage/Build/iOS/leveldb-library.framework"; sourceTree = "<group>"; };
-		C960E3FF2205179F00FAEAE9 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = ../Carthage/Build/iOS/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		C960E4072205194400FAEAE9 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "leveldb-library.framework"; path = "Carthage/Build/iOS/leveldb-library.framework"; sourceTree = "<group>"; };
 		C960E4082205194400FAEAE9 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Carthage/Build/iOS/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		C960E4092205194400FAEAE9 /* Stevia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stevia.framework; path = Carthage/Build/iOS/Stevia.framework; sourceTree = "<group>"; };
 		C960E40D22051A1500FAEAE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C960E41022051E1500FAEAE9 /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
+		C960E41122051E1500FAEAE9 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
+		C960E41222051E1500FAEAE9 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Carthage/Build/iOS/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		C960E41322051E1500FAEAE9 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		C960E41422051E1500FAEAE9 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Carthage/Build/iOS/FirebaseCore.framework; sourceTree = "<group>"; };
+		C960E41522051E1500FAEAE9 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Carthage/Build/iOS/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		C960E41622051E1500FAEAE9 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Carthage/Build/iOS/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		C960E41722051E1500FAEAE9 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
+		C960E41822051E1500FAEAE9 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,9 +52,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C960E40A2205194400FAEAE9 /* leveldb-library.framework in Frameworks */,
-				C960E40B2205194400FAEAE9 /* FirebaseDatabase.framework in Frameworks */,
 				C960E40C2205194400FAEAE9 /* Stevia.framework in Frameworks */,
+				C960E41922051E1600FAEAE9 /* FIRAnalyticsConnector.framework in Frameworks */,
+				C960E41B22051E1600FAEAE9 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				C960E41C22051E1600FAEAE9 /* FirebaseAnalytics.framework in Frameworks */,
+				C960E41D22051E1600FAEAE9 /* FirebaseCore.framework in Frameworks */,
+				C960E41E22051E1600FAEAE9 /* FirebaseInstanceID.framework in Frameworks */,
+				C960E41F22051E1600FAEAE9 /* GoogleAppMeasurement.framework in Frameworks */,
+				C960E42022051E1600FAEAE9 /* GoogleUtilities.framework in Frameworks */,
+				C960E42122051E1600FAEAE9 /* nanopb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +70,7 @@
 		C931BEEB2204AD2300499240 = {
 			isa = PBXGroup;
 			children = (
+				C960E40F22051C8800FAEAE9 /* Firebase Framework */,
 				C931BEF62204AD2300499240 /* MangoHacks2019 */,
 				C931BEF52204AD2300499240 /* Products */,
 				C960E3FC2205179F00FAEAE9 /* Frameworks */,
@@ -83,14 +102,27 @@
 		C960E3FC2205179F00FAEAE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C960E41022051E1500FAEAE9 /* FIRAnalyticsConnector.framework */,
+				C960E41122051E1500FAEAE9 /* Firebase.framework */,
+				C960E41322051E1500FAEAE9 /* FirebaseAnalytics.framework */,
+				C960E41422051E1500FAEAE9 /* FirebaseCore.framework */,
+				C960E41222051E1500FAEAE9 /* FirebaseCoreDiagnostics.framework */,
+				C960E41522051E1500FAEAE9 /* FirebaseInstanceID.framework */,
+				C960E41622051E1500FAEAE9 /* GoogleAppMeasurement.framework */,
+				C960E41722051E1500FAEAE9 /* GoogleUtilities.framework */,
+				C960E41822051E1500FAEAE9 /* nanopb.framework */,
 				C960E4082205194400FAEAE9 /* FirebaseDatabase.framework */,
 				C960E4072205194400FAEAE9 /* leveldb-library.framework */,
 				C960E4092205194400FAEAE9 /* Stevia.framework */,
-				C960E3FF2205179F00FAEAE9 /* FirebaseDatabase.framework */,
-				C960E3FE2205179F00FAEAE9 /* leveldb-library.framework */,
-				C960E3FD2205179F00FAEAE9 /* Stevia.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C960E40F22051C8800FAEAE9 /* Firebase Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Firebase Framework";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

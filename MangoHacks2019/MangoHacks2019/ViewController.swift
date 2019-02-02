@@ -10,10 +10,16 @@ import UIKit
 
 
 class ViewController: UIViewController {
+    
+    @objc func injected() {
+        viewDidLoad()
+        viewWillAppear(true)
+        viewDidAppear(true)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
 
