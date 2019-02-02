@@ -1,0 +1,10 @@
+query getPosts{
+    postsList{
+        items{
+            postID
+            postTitle
+            postBody
+            postCategory
+        }
+    }
+}
