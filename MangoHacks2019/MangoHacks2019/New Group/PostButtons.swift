@@ -26,5 +26,6 @@ class PostButtons: UIButton {
         self.layer.masksToBounds = true
         backgroundColor = UIColor(red:0.06, green:0.62, blue:0.35, alpha:1.0)
         setTitleColor(.white, for: .normal)
+        isEnabled = true
     }
 }

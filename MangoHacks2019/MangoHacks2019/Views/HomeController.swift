@@ -48,9 +48,9 @@ class HomeController: UIViewController {
         pastPostBtn = PostButtons()
         
         newPostBtn.setTitle("New Post", for: .normal)
-        pastPostBtn.setTitle("View Past Post", for: .normal)
-       
-       
+        pastPostBtn.setTitle("View Past Posts", for: .normal)
+        //newPostBtn.addTarget(self, action: #selector(newPostButtonPushed), for: .touchUpInside)
+        //pastPostBtn.addTarget(self, action: #selector(viewPastPostButtonPushed), for: .touchUpInside)
         postBtnStackView.addArrangedSubview(newPostBtn)
         postBtnStackView.addArrangedSubview(pastPostBtn)
         postBtnStackView.distribution = .fillEqually
@@ -67,5 +67,13 @@ class HomeController: UIViewController {
         postBtnStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
  
         
+    }
+    
+   @objc func newPostButtonPushed() {
+        print("New Post Button Pushed")
+    }
+    
+    @objc func viewPastPostButtonPushed() {
+        print("View Past Post Button Pushed")
     }
 }
