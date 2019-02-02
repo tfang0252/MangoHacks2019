@@ -44,7 +44,7 @@ class LoginController: UIViewController, UITextViewDelegate {
         LoginStackView.addArrangedSubview(ButtonStackView)
         
         TitleLabel.text = "OMNI"
-        TitleLabel.center.x = view.center.x
+        TitleLabel.textAlignment = .center
         UserName.text = "Username"
         UserName.textColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         Password.text = "Password"
@@ -91,6 +91,7 @@ class LoginController: UIViewController, UITextViewDelegate {
             ButtonStackView
         )
         
+        TitleLabel.centerHorizontally()
         UserName.width(150).height(30)
         Password.width(150).height(30)
         TitleLabel.width(150).height(50)
