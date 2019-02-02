@@ -9,8 +9,10 @@
 import UIKit
 import Stevia
 
-class LoginController: UIViewController {
+class LoginController: UIViewController, UITextViewDelegate {
 
+    var selectedText = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,17 +34,23 @@ class LoginController: UIViewController {
         let UserName = UITextView()
         let Password = UITextView()
         let LoginStackView = UIStackView()
+        let ButtonStackView = UIStackView()
+        let SignInBtn = PostButtons()
+        let SignUpBtn = PostButtons()
         
         LoginStackView.addArrangedSubview(TitleLabel)
         LoginStackView.addArrangedSubview(UserName)
         LoginStackView.addArrangedSubview(Password)
+        LoginStackView.addArrangedSubview(ButtonStackView)
         
         TitleLabel.text = "OMNI"
+        TitleLabel.center.x = view.center.x
         UserName.text = "Username"
         UserName.textColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         Password.text = "Password"
         Password.textColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
-        
+        UserName.delegate = self
+        Password.delegate = self
         UserName.layer.borderWidth = 0.5
         UserName.layer.cornerRadius = 5.0
         UserName.layer.borderColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0).cgColor
@@ -52,17 +60,43 @@ class LoginController: UIViewController {
         Password.layer.cornerRadius = 5.0
         Password.layer.borderColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0).cgColor
         
+        SignInBtn.text("Sign In")
+        SignUpBtn.text("Sign Up")
+        SignUpBtn.backgroundColor = .darkGray
+        
+        ButtonStackView.addArrangedSubview(SignUpBtn)
+        ButtonStackView.addArrangedSubview(SignInBtn)
+        
+        ButtonStackView.sv(
+            SignUpBtn,
+            SignInBtn
+        )
+        
+        SignUpBtn.width(100).height(30)
+        SignInBtn.width(100).height(30)
+        ButtonStackView.axis = .horizontal
+        ButtonStackView.spacing = 5
+        ButtonStackView.alignment = .fill
+        ButtonStackView.distribution = .equalSpacing
+        ButtonStackView.centerInContainer()
+        ButtonStackView.width(200).height(30)
+
+        SignInBtn.addTarget(self, action: #selector(SignInBtnClicked), for: .touchUpInside)
+        SignUpBtn.addTarget(self, action: #selector(SignUpBtnClicked), for: .touchUpInside)
         //add subviews
         LoginStackView.sv(
             TitleLabel,
             UserName,
-            Password
+            Password,
+            ButtonStackView
         )
+        
         UserName.width(150).height(30)
         Password.width(150).height(30)
         TitleLabel.width(150).height(50)
         LoginStackView.distribution = .equalSpacing
-        //LoginStackView.spacing = 15
+ 
+        LoginStackView.spacing = 10
         TitleLabel.font = UIFont(name: "Helvetica", size: 50)
         
         LoginStackView.axis = .vertical
@@ -73,26 +107,34 @@ class LoginController: UIViewController {
         )
         
         LoginStackView.centerInContainer()
-        LoginStackView.width(300).height(150)
-        
-        //add constraints
-//        self.view.layout(
-//        //10,
-//        // |-50-view1-50-| ~ 50,
-//        // 10,
-//        // |-50-view2-50-| ~ 50
-//        )
-        
+        LoginStackView.width(300).height(170)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0) {
+            selectedText = textView.text
+            textView.text = ""
+            textView.textColor = UIColor.black
+        }
     }
-    */
-
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = selectedText
+            textView.textColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
+        }
+    }
+    
+    @objc func SignInBtnClicked(sender: UIButton!) {
+        let containerViewController: ContainerController = ContainerController()
+        
+        self.present(containerViewController, animated: true, completion: nil)
+    }
+    
+    @objc func SignUpBtnClicked(sender: UIButton!) {
+        print("SignUp Button Pushed")
+//        let containerViewController: ContainerController = ContainerController()
+//
+//        self.present(containerViewController, animated: true, completion: nil)
+    }
 }

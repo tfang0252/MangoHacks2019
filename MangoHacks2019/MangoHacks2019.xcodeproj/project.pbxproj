@@ -92,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				E6DCF3F72205F2B80077882D /* gif9.gif */,
-				C960E40F22051C8800FAEAE9 /* Firebase Framework */,
 				C931BEF62204AD2300499240 /* MangoHacks2019 */,
 				C931BEF52204AD2300499240 /* Products */,
 				C960E3FC2205179F00FAEAE9 /* Frameworks */,
@@ -143,13 +142,6 @@
 				C960E4092205194400FAEAE9 /* Stevia.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C960E40F22051C8800FAEAE9 /* Firebase Framework */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Firebase Framework";
 			sourceTree = "<group>";
 		};
 		D01F448F22058FE90009C32C /* Views */ = {

@@ -64,9 +64,7 @@ class HomeController: UIViewController {
         postBtnStackView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive = true
         postBtnStackView.heightAnchor.constraint(equalToConstant: 60).isActive = true
         postBtnStackView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10).isActive = true
-        postBtnStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
- 
-        
+        postBtnStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 75).isActive = true 
     }
     
    @objc func newPostButtonPushed() {
