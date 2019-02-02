@@ -13,11 +13,7 @@ import SwiftGoogleTranslate
 
 class ViewController: UIViewController {
     
-    @objc func injected() {
-        viewDidLoad()
-        viewWillAppear(true)
-        viewDidAppear(true)
-    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

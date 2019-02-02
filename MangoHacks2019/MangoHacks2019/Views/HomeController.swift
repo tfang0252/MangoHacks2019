@@ -7,20 +7,50 @@
 //
 
 import UIKit
+import Stevia
+import EightBase
+import Apollo
+
 
 class HomeController: UIViewController {
-    
+
     // MARK: - Properties
     
     var delegate: HomeControllerDelegate?
     var postBtnStackView: UIStackView!
     var newPostBtn: UIButton!
     var pastPostBtn: UIButton!
+    var tableview: UITableView!
+    var searchBar: UISearchBar!
+    
+    
+    
+    private let reuseIdentifer = "cell"
+    
+    
+    @objc func injected() {
+        viewDidLoad()
+        viewWillAppear(true)
+        viewDidAppear(true)
+    }
     
     // MARK: - Init
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        EightBase.auth(with: "https://api.8base.com/cjrnngvv3000001r018xof97r", apiToken: "f073e470-8be7-40cf-8f77-614c8b8846bc") { result in
+            switch(result) {
+            case .success():
+                print("Successfully authentificated")
+                break
+            case .failure(let error):
+                print("Failed with \(error)")
+                break
+            }
+            
+            
+        }
         
         view.backgroundColor = .white
         configureNavigationBar()
@@ -56,15 +86,55 @@ class HomeController: UIViewController {
         postBtnStackView.distribution = .fillEqually
         postBtnStackView.alignment = .fill
         postBtnStackView.spacing = 10
+        
+        tableview = UITableView()
+        tableview.delegate = self
+        tableview.dataSource = self
+        tableview.register(PostTVCell.self, forCellReuseIdentifier: reuseIdentifer)
+        tableview.separatorStyle = .none
+        searchBarSetup()
 
-        view.addSubview(postBtnStackView)
+        let linebreak = UIView()
+        linebreak.backgroundColor = UIColor(red:0.90, green:0.91, blue:0.95, alpha:1.0)
+        self.view.sv(
+            postBtnStackView,
+            searchBar,
+            linebreak,
+            tableview
+        )
         
-        postBtnStackView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.layout(
+        80,
+        |-25-postBtnStackView-25-| ~ 45,
+        7,
+        |-searchBar-| ~ 40,
+        10,
+        |linebreak|,
+        10,
+        |tableview| ~ 700
+        )
         
-        postBtnStackView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive = true
-        postBtnStackView.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        postBtnStackView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10).isActive = true
-        postBtnStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 75).isActive = true 
+
+        linebreak.fillHorizontally().height(1)
+ 
+        
+ }
+    
+    func searchBarSetup(){
+        searchBar = UISearchBar()
+        searchBar.searchBarStyle = UISearchBar.Style.default
+        searchBar.placeholder = " Search..."
+        searchBar.sizeToFit()
+        searchBar.isTranslucent = true
+        searchBar.backgroundImage = UIImage()
+        let textFieldInsideSearchBar = searchBar.value(forKey: "searchField") as? UITextField
+        textFieldInsideSearchBar?.backgroundColor = UIColor(red:0.90, green:0.91, blue:0.95, alpha:1.0)
+        searchBar.delegate = self
+    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange textSearched: String)
+    {
+        
     }
     
    @objc func newPostButtonPushed() {
@@ -74,4 +144,26 @@ class HomeController: UIViewController {
     @objc func viewPastPostButtonPushed() {
         print("View Past Post Button Pushed")
     }
+}
+
+extension HomeController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifer, for: indexPath) as! PostTVCell
+        
+        return cell
+    }
+}
+
+extension HomeController: UITableViewDelegate{
+    
+    
+}
+
+extension HomeController: UISearchBarDelegate{
+    
+    
 }
