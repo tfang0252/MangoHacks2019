@@ -114,10 +114,11 @@ class HomeController: UIViewController {
         |tableview| ~ 700
         )
         
+
         linebreak.fillHorizontally().height(1)
  
         
-    }
+ }
     
     func searchBarSetup(){
         searchBar = UISearchBar()
