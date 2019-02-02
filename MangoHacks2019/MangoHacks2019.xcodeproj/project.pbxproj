@@ -12,6 +12,10 @@
 		C931BEFD2204AD2300499240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C931BEFB2204AD2300499240 /* Main.storyboard */; };
 		C931BEFF2204AD2400499240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C931BEFE2204AD2400499240 /* Assets.xcassets */; };
 		C931BF022204AD2400499240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C931BF002204AD2400499240 /* LaunchScreen.storyboard */; };
+		C960E40A2205194400FAEAE9 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4072205194400FAEAE9 /* leveldb-library.framework */; };
+		C960E40B2205194400FAEAE9 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4082205194400FAEAE9 /* FirebaseDatabase.framework */; };
+		C960E40C2205194400FAEAE9 /* Stevia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4092205194400FAEAE9 /* Stevia.framework */; };
+		C960E40E22051A1500FAEAE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C960E40D22051A1500FAEAE9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,13 @@
 		C931BEFE2204AD2400499240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C931BF012204AD2400499240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C931BF032204AD2400499240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C960E3FD2205179F00FAEAE9 /* Stevia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stevia.framework; path = ../Carthage/Build/iOS/Stevia.framework; sourceTree = "<group>"; };
+		C960E3FE2205179F00FAEAE9 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "leveldb-library.framework"; path = "../Carthage/Build/iOS/leveldb-library.framework"; sourceTree = "<group>"; };
+		C960E3FF2205179F00FAEAE9 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = ../Carthage/Build/iOS/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		C960E4072205194400FAEAE9 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "leveldb-library.framework"; path = "Carthage/Build/iOS/leveldb-library.framework"; sourceTree = "<group>"; };
+		C960E4082205194400FAEAE9 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Carthage/Build/iOS/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		C960E4092205194400FAEAE9 /* Stevia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stevia.framework; path = Carthage/Build/iOS/Stevia.framework; sourceTree = "<group>"; };
+		C960E40D22051A1500FAEAE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C960E40A2205194400FAEAE9 /* leveldb-library.framework in Frameworks */,
+				C960E40B2205194400FAEAE9 /* FirebaseDatabase.framework in Frameworks */,
+				C960E40C2205194400FAEAE9 /* Stevia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +54,7 @@
 			children = (
 				C931BEF62204AD2300499240 /* MangoHacks2019 */,
 				C931BEF52204AD2300499240 /* Products */,
+				C960E3FC2205179F00FAEAE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +69,7 @@
 		C931BEF62204AD2300499240 /* MangoHacks2019 */ = {
 			isa = PBXGroup;
 			children = (
+				C960E40D22051A1500FAEAE9 /* GoogleService-Info.plist */,
 				C931BEF72204AD2300499240 /* AppDelegate.swift */,
 				C931BEF92204AD2300499240 /* ViewController.swift */,
 				C931BEFB2204AD2300499240 /* Main.storyboard */,
@@ -62,6 +78,19 @@
 				C931BF032204AD2400499240 /* Info.plist */,
 			);
 			path = MangoHacks2019;
+			sourceTree = "<group>";
+		};
+		C960E3FC2205179F00FAEAE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C960E4082205194400FAEAE9 /* FirebaseDatabase.framework */,
+				C960E4072205194400FAEAE9 /* leveldb-library.framework */,
+				C960E4092205194400FAEAE9 /* Stevia.framework */,
+				C960E3FF2205179F00FAEAE9 /* FirebaseDatabase.framework */,
+				C960E3FE2205179F00FAEAE9 /* leveldb-library.framework */,
+				C960E3FD2205179F00FAEAE9 /* Stevia.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +103,7 @@
 				C931BEF02204AD2300499240 /* Sources */,
 				C931BEF12204AD2300499240 /* Frameworks */,
 				C931BEF22204AD2300499240 /* Resources */,
+				C960E403220517AA00FAEAE9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				C931BF022204AD2400499240 /* LaunchScreen.storyboard in Resources */,
+				C960E40E22051A1500FAEAE9 /* GoogleService-Info.plist in Resources */,
 				C931BEFF2204AD2400499240 /* Assets.xcassets in Resources */,
 				C931BEFD2204AD2300499240 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C960E403220517AA00FAEAE9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Stevia.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C931BEF02204AD2300499240 /* Sources */ = {
@@ -284,6 +336,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9669T4332J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MangoHacks2019/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +358,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9669T4332J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MangoHacks2019/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
