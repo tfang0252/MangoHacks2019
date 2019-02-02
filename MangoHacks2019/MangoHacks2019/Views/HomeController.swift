@@ -8,6 +8,9 @@
 
 import UIKit
 import Stevia
+import EightBase
+import Apollo
+
 
 class HomeController: UIViewController {
 
@@ -36,6 +39,18 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        EightBase.auth(with: "https://api.8base.com/cjrnngvv3000001r018xof97r", apiToken: "f073e470-8be7-40cf-8f77-614c8b8846bc") { result in
+            switch(result) {
+            case .success():
+                print("Successfully authentificated")
+                break
+            case .failure(let error):
+                print("Failed with \(error)")
+                break
+            }
+            
+            
+        }
         
         view.backgroundColor = .white
         configureNavigationBar()

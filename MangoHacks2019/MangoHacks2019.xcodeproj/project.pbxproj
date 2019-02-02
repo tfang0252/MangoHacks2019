@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7ED0C4ADAE6A8729D149E211 /* Pods_MangoHacks2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66146B1FBF18F421C37CF9A /* Pods_MangoHacks2019.framework */; };
 		C921FFF62205FE7800ACEB87 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = C921FFF52205FE7800ACEB87 /* Auth0.plist */; };
+		C921FFFC2206199200ACEB87 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = C921FFFB2206199100ACEB87 /* schema.json */; };
 		C931BEF82204AD2300499240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931BEF72204AD2300499240 /* AppDelegate.swift */; };
 		C931BEFA2204AD2300499240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931BEF92204AD2300499240 /* ViewController.swift */; };
 		C931BEFD2204AD2300499240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C931BEFB2204AD2300499240 /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 		C960E40E22051A1500FAEAE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C960E40D22051A1500FAEAE9 /* GoogleService-Info.plist */; };
 		C960E4262205405700FAEAE9 /* SwiftGoogleTranslate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4242205401000FAEAE9 /* SwiftGoogleTranslate.framework */; };
 		C97979412205C3420084F96A /* PostTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97979402205C3420084F96A /* PostTVCell.swift */; };
+		C97E12AE22061D3000DF5B4F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E12AD22061D3000DF5B4F /* API.swift */; };
+		C97E12B22206205200DF5B4F /* HomeController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C97E12B12206205200DF5B4F /* HomeController.graphql */; };
 		D01F44932205906D0009C32C /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F44922205906D0009C32C /* ContainerController.swift */; };
 		D01F4495220590910009C32C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F4494220590910009C32C /* HomeController.swift */; };
 		D01F4497220590B30009C32C /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F4496220590B30009C32C /* MenuController.swift */; };
@@ -31,6 +34,7 @@
 		4FA00ACA43DD94BD889D8267 /* Pods-MangoHacks2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoHacks2019.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MangoHacks2019/Pods-MangoHacks2019.debug.xcconfig"; sourceTree = "<group>"; };
 		A8CD19439A2F6B5C43B4CB88 /* Pods-MangoHacks2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoHacks2019.release.xcconfig"; path = "Pods/Target Support Files/Pods-MangoHacks2019/Pods-MangoHacks2019.release.xcconfig"; sourceTree = "<group>"; };
 		C921FFF52205FE7800ACEB87 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		C921FFFB2206199100ACEB87 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = MangoHacks2019/schema.json; sourceTree = SOURCE_ROOT; };
 		C931BEF42204AD2300499240 /* MangoHacks2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoHacks2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C931BEF72204AD2300499240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C931BEF92204AD2300499240 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		C960E41822051E1500FAEAE9 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
 		C960E4242205401000FAEAE9 /* SwiftGoogleTranslate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGoogleTranslate.framework; path = Carthage/Build/iOS/SwiftGoogleTranslate.framework; sourceTree = "<group>"; };
 		C97979402205C3420084F96A /* PostTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVCell.swift; sourceTree = "<group>"; };
+		C97E12AD22061D3000DF5B4F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C97E12B12206205200DF5B4F /* HomeController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; name = HomeController.graphql; path = "MangoHacks2019/Query Folder/HomeController.graphql"; sourceTree = SOURCE_ROOT; };
 		D01F44922205906D0009C32C /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContainerController.swift; path = MangoHacks2019/Views/ContainerController.swift; sourceTree = SOURCE_ROOT; };
 		D01F4494220590910009C32C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = MangoHacks2019/Views/HomeController.swift; sourceTree = SOURCE_ROOT; };
 		D01F4496220590B30009C32C /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = MangoHacks2019/Views/MenuController.swift; sourceTree = SOURCE_ROOT; };
@@ -86,6 +92,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C921FFF722060DF500ACEB87 /* Query Folder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Query Folder";
+			sourceTree = "<group>";
+		};
 		C931BEEB2204AD2300499240 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +121,7 @@
 		C931BEF62204AD2300499240 /* MangoHacks2019 */ = {
 			isa = PBXGroup;
 			children = (
+				C921FFF722060DF500ACEB87 /* Query Folder */,
 				D01F449A220590E20009C32C /* Utils */,
 				D01F4491220590090009C32C /* Models */,
 				D01F449022058FFE0009C32C /* Controllers */,
@@ -120,6 +134,8 @@
 				C931BF002204AD2400499240 /* LaunchScreen.storyboard */,
 				C931BF032204AD2400499240 /* Info.plist */,
 				C921FFF52205FE7800ACEB87 /* Auth0.plist */,
+				C97E12AD22061D3000DF5B4F /* API.swift */,
+				C921FFFB2206199100ACEB87 /* schema.json */,
 			);
 			path = MangoHacks2019;
 			sourceTree = "<group>";
@@ -167,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				D01F44922205906D0009C32C /* ContainerController.swift */,
+				C97E12B12206205200DF5B4F /* HomeController.graphql */,
 				D01F4494220590910009C32C /* HomeController.swift */,
 				D01F4496220590B30009C32C /* MenuController.swift */,
 			);
@@ -200,6 +217,7 @@
 			buildConfigurationList = C931BF062204AD2400499240 /* Build configuration list for PBXNativeTarget "MangoHacks2019" */;
 			buildPhases = (
 				68E7968B2E25328397CBB7F1 /* [CP] Check Pods Manifest.lock */,
+				C921FFFA22060FB400ACEB87 /* ShellScript */,
 				C931BEF02204AD2300499240 /* Sources */,
 				C931BEF12204AD2300499240 /* Frameworks */,
 				C960E403220517AA00FAEAE9 /* ShellScript */,
@@ -253,8 +271,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C921FFFC2206199200ACEB87 /* schema.json in Resources */,
 				C921FFF62205FE7800ACEB87 /* Auth0.plist in Resources */,
 				C931BF022204AD2400499240 /* LaunchScreen.storyboard in Resources */,
+				C97E12B22206205200DF5B4F /* HomeController.graphql in Resources */,
 				C960E40E22051A1500FAEAE9 /* GoogleService-Info.plist in Resources */,
 				C931BEFF2204AD2400499240 /* Assets.xcassets in Resources */,
 				C931BEFD2204AD2300499240 /* Main.storyboard in Resources */,
@@ -310,6 +330,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C921FFFA22060FB400ACEB87 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift\n";
+		};
 		C960E403220517AA00FAEAE9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97E12AE22061D3000DF5B4F /* API.swift in Sources */,
 				D01F4497220590B30009C32C /* MenuController.swift in Sources */,
 				D01F4495220590910009C32C /* HomeController.swift in Sources */,
 				D01F44A022059DE80009C32C /* PostButtons.swift in Sources */,
