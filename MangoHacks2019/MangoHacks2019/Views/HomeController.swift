@@ -23,6 +23,11 @@ class HomeController: UIViewController {
     var tableview: UITableView!
     var searchBar: UISearchBar!
     
+    var posterList: [GetPostsQuery.Data.PostsList.Item]? {
+        didSet {
+            
+        }
+    }
     
     
     private let reuseIdentifer = "cell"
@@ -52,12 +57,25 @@ class HomeController: UIViewController {
             
         }
         
+        //print(posterList[0])
+       
         view.backgroundColor = .white
         configureNavigationBar()
         configurePostBtnStackView()
     }
-    
     // MARK: - Handlers
+    var watcher: GraphQLQueryWatcher<GetPostsQuery>?
+    
+    func loadData() {
+        watcher = EightBase.Apollo?.watch(query: GetPostsQuery()) { (result, error) in
+            if let error = error {
+                NSLog("Error while fetching query: \(error.localizedDescription)")
+                return
+            }
+            
+            self.posterList = result?.data?.postsList.items
+        }
+    }
     
     @objc func handleMenuToggle() {
         delegate?.handleMenuToggle(forMenuOption: nil)
