@@ -23,6 +23,8 @@
 		C960E42022051E1600FAEAE9 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41722051E1500FAEAE9 /* GoogleUtilities.framework */; };
 		C960E42122051E1600FAEAE9 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41822051E1500FAEAE9 /* nanopb.framework */; };
 		C960E4262205405700FAEAE9 /* SwiftGoogleTranslate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4242205401000FAEAE9 /* SwiftGoogleTranslate.framework */; };
+		C97979412205C3420084F96A /* PostTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97979402205C3420084F96A /* PostTVCell.swift */; };
+		C97979422205E9720084F96A /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E41122051E1500FAEAE9 /* Firebase.framework */; };
 		D01F44932205906D0009C32C /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F44922205906D0009C32C /* ContainerController.swift */; };
 		D01F4495220590910009C32C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F4494220590910009C32C /* HomeController.swift */; };
 		D01F4497220590B30009C32C /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F4496220590B30009C32C /* MenuController.swift */; };
@@ -54,6 +56,7 @@
 		C960E41722051E1500FAEAE9 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
 		C960E41822051E1500FAEAE9 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
 		C960E4242205401000FAEAE9 /* SwiftGoogleTranslate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGoogleTranslate.framework; path = Carthage/Build/iOS/SwiftGoogleTranslate.framework; sourceTree = "<group>"; };
+		C97979402205C3420084F96A /* PostTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVCell.swift; sourceTree = "<group>"; };
 		D01F44922205906D0009C32C /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContainerController.swift; path = MangoHacks2019/Views/ContainerController.swift; sourceTree = SOURCE_ROOT; };
 		D01F4494220590910009C32C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = MangoHacks2019/Views/HomeController.swift; sourceTree = SOURCE_ROOT; };
 		D01F4496220590B30009C32C /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = MangoHacks2019/Views/MenuController.swift; sourceTree = SOURCE_ROOT; };
@@ -68,10 +71,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C960E41C22051E1600FAEAE9 /* FirebaseAnalytics.framework in Frameworks */,
 				C960E40C2205194400FAEAE9 /* Stevia.framework in Frameworks */,
 				C960E41922051E1600FAEAE9 /* FIRAnalyticsConnector.framework in Frameworks */,
 				C960E41B22051E1600FAEAE9 /* FirebaseCoreDiagnostics.framework in Frameworks */,
-				C960E41C22051E1600FAEAE9 /* FirebaseAnalytics.framework in Frameworks */,
+				C97979422205E9720084F96A /* Firebase.framework in Frameworks */,
 				C960E41D22051E1600FAEAE9 /* FirebaseCore.framework in Frameworks */,
 				C960E41E22051E1600FAEAE9 /* FirebaseInstanceID.framework in Frameworks */,
 				C960E4262205405700FAEAE9 /* SwiftGoogleTranslate.framework in Frameworks */,
@@ -152,6 +156,7 @@
 			children = (
 				D01F449D220591170009C32C /* MenuOptionCell.swift */,
 				D01F449F22059DE80009C32C /* PostButtons.swift */,
+				C97979402205C3420084F96A /* PostTVCell.swift */,
 			);
 			name = Views;
 			path = "New Group";
@@ -288,6 +293,7 @@
 				C931BEF82204AD2300499240 /* AppDelegate.swift in Sources */,
 				D01F44932205906D0009C32C /* ContainerController.swift in Sources */,
 				D01F449E220591170009C32C /* MenuOptionCell.swift in Sources */,
+				C97979412205C3420084F96A /* PostTVCell.swift in Sources */,
 				D01F4499220590D00009C32C /* MenuOptions.swift in Sources */,
 				D01F449C220590FC0009C32C /* HomeControllerDelegate.swift in Sources */,
 			);
