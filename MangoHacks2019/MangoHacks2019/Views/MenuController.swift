@@ -105,10 +105,8 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifer, for: indexPath) as! MenuOptionCell
         cell.descriptionLabel.textColor = .black
         if(indexPath.row == 6){
-        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-            appDelegate.window?.rootViewController?.dismiss(animated: true, completion: nil)
-            (appDelegate.window?.rootViewController as? UINavigationController)?.popToRootViewController(animated: true)
-        }
+            let logInViewController: LoginController = LoginController()
+            self.present(logInViewController, animated: true, completion: nil)
 
             
         }
