@@ -87,14 +87,18 @@ class ContainerController: UIViewController {
         switch menuOption {
         case .General:
             print("Show general")
-        case .HandyMan:
+        case .WhereToEat:
             print("Show Handy Man Options")
-        case .OutToEat:
+        case .ThingsToDo:
             print("Show Places To Eat")
-        case .Settings:
+        case .HelpAdvice:
             print("Show Settings")
-        case .MeetUp:
+        case .Home:
             print("Show Settings")
+        case .Setting:
+            print("Show Settings")
+        case .Logout:
+             print("Show Settings")
         }
     }
     

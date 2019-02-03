@@ -10,29 +10,28 @@ import UIKit
 
 enum MenuOption: Int, CustomStringConvertible {
     
+    case Home
     case General
-    case HandyMan
-    case MeetUp
-    case OutToEat
-    case Settings
+    case WhereToEat
+    case ThingsToDo
+    case HelpAdvice
+    case Setting
+    case Logout
+
     
     var description: String {
         switch self {
+        
+        case .Home: return "Home"
         case .General: return "General"
-        case .HandyMan: return "Handy Man"
-        case .MeetUp: return "Meet Up"
-        case .OutToEat: return "Where To Eat"
-        case .Settings: return "Settings"
+        case .WhereToEat: return "Where To Eat"
+        case .ThingsToDo: return "Things To Do"
+        case .HelpAdvice: return "Help/Advice"
+        case .Setting: return "Setting"
+        case .Logout: return "Logout"
+
         }
     }
     
-    var image: UIImage {
-        switch self {
-        case .General: return UIImage(named: "ic_person_outline_white_2x") ?? UIImage()
-        case .HandyMan: return UIImage(named: "ic_mail_outline_white_2x") ?? UIImage()
-        case .MeetUp: return UIImage(named: "ic_menu_white_3x") ?? UIImage()
-        case .OutToEat: return UIImage(named: "baseline_settings_white_24dp") ?? UIImage()
-        case .Settings: return UIImage(named: "baseline_settings_white_24dp") ?? UIImage()
-        }
-    }
+
 }

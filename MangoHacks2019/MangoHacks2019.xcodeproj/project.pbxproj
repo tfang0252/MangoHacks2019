@@ -15,6 +15,9 @@
 		C931BEFD2204AD2300499240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C931BEFB2204AD2300499240 /* Main.storyboard */; };
 		C931BEFF2204AD2400499240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C931BEFE2204AD2400499240 /* Assets.xcassets */; };
 		C931BF022204AD2400499240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C931BF002204AD2400499240 /* LaunchScreen.storyboard */; };
+		C93B5EDF220638C100A742E6 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B5EDE220638C100A742E6 /* SignupController.swift */; };
+		C93B5EE12206471800A742E6 /* SignUpTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B5EE02206471800A742E6 /* SignUpTVCell.swift */; };
+		C93B5EE522064F9400A742E6 /* SignupDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B5EE422064F9400A742E6 /* SignupDropDown.swift */; };
 		C960E40C2205194400FAEAE9 /* Stevia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4092205194400FAEAE9 /* Stevia.framework */; };
 		C960E40E22051A1500FAEAE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C960E40D22051A1500FAEAE9 /* GoogleService-Info.plist */; };
 		C960E4262205405700FAEAE9 /* SwiftGoogleTranslate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C960E4242205401000FAEAE9 /* SwiftGoogleTranslate.framework */; };
@@ -44,6 +47,9 @@
 		C931BEFE2204AD2400499240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C931BF012204AD2400499240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C931BF032204AD2400499240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C93B5EDE220638C100A742E6 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = SOURCE_ROOT; };
+		C93B5EE02206471800A742E6 /* SignUpTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTVCell.swift; sourceTree = "<group>"; };
+		C93B5EE422064F9400A742E6 /* SignupDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignupDropDown.swift; path = "MangoHacks2019/New Group/SignupDropDown.swift"; sourceTree = SOURCE_ROOT; };
 		C960E4072205194400FAEAE9 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "leveldb-library.framework"; path = "Carthage/Build/iOS/leveldb-library.framework"; sourceTree = "<group>"; };
 		C960E4082205194400FAEAE9 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Carthage/Build/iOS/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		C960E4092205194400FAEAE9 /* Stevia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stevia.framework; path = Carthage/Build/iOS/Stevia.framework; sourceTree = "<group>"; };
@@ -68,12 +74,9 @@
 		D01F449B220590FC0009C32C /* HomeControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerDelegate.swift; sourceTree = "<group>"; };
 		D01F449D220591170009C32C /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
 		D01F449F22059DE80009C32C /* PostButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostButtons.swift; sourceTree = "<group>"; };
-
 		E6DCF3E32205D2D40077882D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = SOURCE_ROOT; };
-		E6DCF3F72205F2B80077882D /* gif9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = gif9.gif; path = ../../../../Downloads/gif9.gif; sourceTree = "<group>"; };
-
+		E6DCF3F72205F2B80077882D /* gif9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif9.gif; sourceTree = "<group>"; };
 		F66146B1FBF18F421C37CF9A /* Pods_MangoHacks2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoHacks2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,7 @@
 				D01F449D220591170009C32C /* MenuOptionCell.swift */,
 				D01F449F22059DE80009C32C /* PostButtons.swift */,
 				C97979402205C3420084F96A /* PostTVCell.swift */,
+				C93B5EE02206471800A742E6 /* SignUpTVCell.swift */,
 			);
 			name = Views;
 			path = "New Group";
@@ -186,7 +190,9 @@
 				C97E12B12206205200DF5B4F /* HomeController.graphql */,
 				D01F4494220590910009C32C /* HomeController.swift */,
 				D01F4496220590B30009C32C /* MenuController.swift */,
+				C93B5EDE220638C100A742E6 /* SignupController.swift */,
 				E6DCF3E32205D2D40077882D /* LoginController.swift */,
+				C93B5EE422064F9400A742E6 /* SignupDropDown.swift */,
 			);
 			name = Controllers;
 			path = "New Group1";
@@ -275,11 +281,8 @@
 				C921FFFC2206199200ACEB87 /* schema.json in Resources */,
 				C921FFF62205FE7800ACEB87 /* Auth0.plist in Resources */,
 				C931BF022204AD2400499240 /* LaunchScreen.storyboard in Resources */,
-
 				E6DCF3F82205F2B90077882D /* gif9.gif in Resources */,
-
 				C97E12B22206205200DF5B4F /* HomeController.graphql in Resources */,
-
 				C960E40E22051A1500FAEAE9 /* GoogleService-Info.plist in Resources */,
 				C931BEFF2204AD2400499240 /* Assets.xcassets in Resources */,
 				C931BEFD2204AD2300499240 /* Main.storyboard in Resources */,
@@ -379,7 +382,10 @@
 				D01F4495220590910009C32C /* HomeController.swift in Sources */,
 				D01F44A022059DE80009C32C /* PostButtons.swift in Sources */,
 				C931BEFA2204AD2300499240 /* ViewController.swift in Sources */,
+				C93B5EDF220638C100A742E6 /* SignupController.swift in Sources */,
 				C931BEF82204AD2300499240 /* AppDelegate.swift in Sources */,
+				C93B5EE522064F9400A742E6 /* SignupDropDown.swift in Sources */,
+				C93B5EE12206471800A742E6 /* SignUpTVCell.swift in Sources */,
 				D01F44932205906D0009C32C /* ContainerController.swift in Sources */,
 				D01F449E220591170009C32C /* MenuOptionCell.swift in Sources */,
 				C97979412205C3420084F96A /* PostTVCell.swift in Sources */,

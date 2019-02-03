@@ -92,10 +92,13 @@ class LoginController: UIViewController, UITextViewDelegate {
         )
         
         TitleLabel.centerHorizontally()
-        UserName.width(150).height(30)
-        Password.width(150).height(30)
+        UserName.width(200).height(40)
+        Password.width(200).height(40)
         TitleLabel.width(150).height(50)
         LoginStackView.distribution = .equalSpacing
+        
+        UserName.font = .systemFont(ofSize: 18)
+        Password.font = .systemFont(ofSize: 18)
  
         LoginStackView.spacing = 10
         TitleLabel.font = UIFont(name: "Helvetica", size: 50)
@@ -108,7 +111,7 @@ class LoginController: UIViewController, UITextViewDelegate {
         )
         
         LoginStackView.centerInContainer()
-        LoginStackView.width(300).height(170)
+        LoginStackView.width(420).height(200)
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -127,8 +130,8 @@ class LoginController: UIViewController, UITextViewDelegate {
     }
     
     @objc func SignInBtnClicked(sender: UIButton!) {
-        let containerViewController: ContainerController = ContainerController()
-        
+        //let containerViewController: ContainerController = ContainerController()
+        let containerViewController: SignupController = SignupController()
         self.present(containerViewController, animated: true, completion: nil)
     }
     

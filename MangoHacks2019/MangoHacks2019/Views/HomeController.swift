@@ -63,11 +63,26 @@ class HomeController: UIViewController {
         delegate?.handleMenuToggle(forMenuOption: nil)
     }
     
+    @objc func notificationToggle() {
+        //delegate?.handleMenuToggle(forMenuOption: nil)
+        print("zach smells")
+    }
+    
     func configureNavigationBar() {
         navigationController?.navigationBar.barTintColor = UIColor(red:0.26, green:0.52, blue:0.96, alpha:1.0)
         navigationController?.navigationBar.barStyle = .black
         
         navigationItem.title = "OMNI"
+        
+        let menuBtn = UIButton(type: .custom)
+        menuBtn.frame = CGRect(x: 0.0, y: 0.0, width: 20, height: 20)
+        
+        let notificationImage = UIImageView(image: #imageLiteral(resourceName: "bell-2_45x45"))
+        
+        menuBtn.sv(notificationImage)
+        
+       let menuBarItem = UIBarButtonItem(customView: menuBtn)
+        navigationItem.rightBarButtonItem = menuBarItem
         self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 28.0)!]
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "ic_menu_white_3x-1").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToggle))
     }

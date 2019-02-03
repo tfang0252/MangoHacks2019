@@ -20,6 +20,14 @@ class MenuController: UIViewController {
     var profileImage: UIImageView!
     var delegate: HomeControllerDelegate?
     
+    var images: [UIImage] = [UIImage(named: "house-outline-2")!,
+                             UIImage(named: "general")!,
+                             UIImage(named: "eat")!,
+                             UIImage(named: "do")!,
+                             UIImage(named: "help")!,
+                             UIImage(named: "settings-2")!,
+                             UIImage(named: "logout-2.png")!]
+    
     // MARK: - Init
     
     override func viewDidLoad() {
@@ -54,7 +62,7 @@ class MenuController: UIViewController {
         profileName = UILabel()
         profileImage = UIImageView(image: #imageLiteral(resourceName: "llama"))
         
-        profileName.text = "Zachary Frederick"
+        profileName.text = "Fachary Zrederick"
         profileName.textColor = .white
         profileStackView.addArrangedSubview(profileImage)
         profileStackView.addArrangedSubview(profileName)
@@ -76,7 +84,7 @@ class MenuController: UIViewController {
 
 extension MenuController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return images.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -84,13 +92,15 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
         
         let menuOption = MenuOption(rawValue: indexPath.row)
         cell.descriptionLabel.text = menuOption?.description
-        cell.iconImageView.image = menuOption?.image
+        cell.iconImageView.image = images[indexPath.row]
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let menuOption = MenuOption(rawValue: indexPath.row)
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifer, for: indexPath) as! MenuOptionCell
+        cell.descriptionLabel.textColor = .black 
         delegate?.handleMenuToggle(forMenuOption: menuOption)
     }
     

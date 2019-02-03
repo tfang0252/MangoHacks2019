@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Stevia
 
 class MenuOptionCell: UITableViewCell {
     
@@ -34,17 +35,27 @@ class MenuOptionCell: UITableViewCell {
         
         backgroundColor = UIColor(red:0.26, green:0.52, blue:0.96, alpha:0.3)
         
-        addSubview(iconImageView)
-        iconImageView.translatesAutoresizingMaskIntoConstraints = false
-        iconImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        iconImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 12).isActive = true
-        iconImageView.heightAnchor.constraint(equalToConstant: 24).isActive = true
-        iconImageView.widthAnchor.constraint(equalToConstant: 24).isActive = true
+//        addSubview(iconImageView)
+//        iconImageView.translatesAutoresizingMaskIntoConstraints = false
+//        iconImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+//        iconImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 12).isActive = true
+//        iconImageView.heightAnchor.constraint(equalToConstant: 24).isActive = true
+//        iconImageView.widthAnchor.constraint(equalToConstant: 24).isActive = true
+//
+//        addSubview(descriptionLabel)
+//        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
+//        descriptionLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+//        descriptionLabel.leftAnchor.constraint(equalTo: iconImageView.rightAnchor, constant: 12).isActive = true
         
-        addSubview(descriptionLabel)
-        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-        descriptionLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        descriptionLabel.leftAnchor.constraint(equalTo: iconImageView.rightAnchor, constant: 12).isActive = true
+        sv(
+        iconImageView,
+        descriptionLabel
+        )
+       
+        iconImageView.width(15).height(15)
+        descriptionLabel.centerVertically().centerHorizontally(-100)
+        iconImageView.centerVertically().centerHorizontally(-170)
+        descriptionLabel.textAlignment = .left
     }
     
     required init?(coder aDecoder: NSCoder) {
