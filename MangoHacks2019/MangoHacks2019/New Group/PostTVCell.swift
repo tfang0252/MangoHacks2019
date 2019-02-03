@@ -14,6 +14,7 @@ class PostTVCell: UITableViewCell {
     
     let postTitle = UILabel()
     let postBody = UITextView()
+    let logo = UIImageView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -27,8 +28,8 @@ class PostTVCell: UITableViewCell {
         //postBody.backgroundColor = .blue
         postBody.backgroundColor = UIColor(red:0.90, green:0.91, blue:0.95, alpha:1.0)
         postBody.isEditable = false
-        let logo = UIImageView()
-        logo.backgroundColor = .red
+       
+        //logo.backgroundColor = .red
         logo.layer.cornerRadius = 5
         logo.layer.masksToBounds = true
         

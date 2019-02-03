@@ -18,8 +18,9 @@ class SignupController: UIViewController, CLLocationManagerDelegate {
     let geocoder = CLGeocoder()
     var placemark: CLPlacemark?
     var cityNameStr: String = ""
+    var rowSelected: Int?
     
-    var languageArray = ["What Language Do You Speak?","English", "Chinese", "Hindi", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Arabic", "Romanian", "Swedish", "Dutch", "Polish", "Russian", "Danish", "Austrian", "Korean", "Bengali", "Greek", "Turkish", "Vietnamese", "Albanian", "Afrikaans", "Czech", "Croatian", "Icelandic", "Latvian", "Malay", "Maltese", "Norwegian", "Punjabi"]
+    var languageArray = ["English", "Chinese", "Hindi", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Arabic", "Romanian"]
     
     
     var city: String?
@@ -63,7 +64,7 @@ class SignupController: UIViewController, CLLocationManagerDelegate {
         langImage.width(60).height(60)
         locImage.width(60).height(60)
         
-        langSelect.width(280).height(120)
+        langSelect.width(280).height(180)
         locSelect.width(280).height(120)
         
         
@@ -84,12 +85,10 @@ class SignupController: UIViewController, CLLocationManagerDelegate {
         nextButton.addTarget(self, action: #selector(nextBtnClicked), for: .touchUpInside)
         bgView.sv([
             langSelect,
-            locSelect,
-            langImage,
-            locImage
+            langImage
             ])
         langImage.centerVertically(-140).centerHorizontally()
-        langSelect.centerVertically(-70).centerHorizontally()
+        langSelect.centerVertically(10).centerHorizontally()
         locImage.centerVertically(30).centerHorizontally()
         locSelect.centerVertically(100).centerHorizontally()
         
@@ -138,6 +137,7 @@ class SignupController: UIViewController, CLLocationManagerDelegate {
     
     @objc func nextBtnClicked(sender: UIButton!) {
         let containerViewController: ContainerController = ContainerController()
+        containerViewController.homeController.langInd = rowSelected
         self.present(containerViewController, animated: true, completion: nil)
     }
     
@@ -186,4 +186,9 @@ extension SignupController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return languageArray[row]
     }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        rowSelected = row
+    }
+    
 }

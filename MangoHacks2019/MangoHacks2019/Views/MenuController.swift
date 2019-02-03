@@ -65,7 +65,7 @@ class MenuController: UIViewController {
         profileName = UILabel()
         profileImage = UIImageView(image: #imageLiteral(resourceName: "llama"))
         
-        profileName.text = "Fachary Zrederick"
+        profileName.text = "Zachary Frederick"
         profileName.textColor = .white
         profileStackView.addArrangedSubview(profileImage)
         profileStackView.addArrangedSubview(profileName)
@@ -103,8 +103,19 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let menuOption = MenuOption(rawValue: indexPath.row)
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifer, for: indexPath) as! MenuOptionCell
-        cell.descriptionLabel.textColor = .black 
+        cell.descriptionLabel.textColor = .black
+        if(indexPath.row == 6){
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.window?.rootViewController?.dismiss(animated: true, completion: nil)
+            (appDelegate.window?.rootViewController as? UINavigationController)?.popToRootViewController(animated: true)
+        }
+
+            
+        }
         delegate?.handleMenuToggle(forMenuOption: menuOption)
+        
+
+        
     }
     
 }

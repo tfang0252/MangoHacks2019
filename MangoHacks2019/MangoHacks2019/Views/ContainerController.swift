@@ -15,6 +15,7 @@ class ContainerController: UIViewController {
     var menuController: MenuController!
     var loginController: LoginController!
     var centerController: UIViewController!
+    var homeController = HomeController()
     var isExpanded = false
     
     // MARK: - Init
@@ -42,7 +43,7 @@ class ContainerController: UIViewController {
     
     func configureHomeController() {
         //let loginController = LoginController()
-        let homeController = HomeController()
+        
         homeController.delegate = self
         centerController = UINavigationController(rootViewController: homeController)
         //centerController = UINavigationController(rootViewController: loginController)
