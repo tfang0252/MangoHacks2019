@@ -28,6 +28,7 @@ class SignupController: UIViewController, CLLocationManagerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        determineMyCurrentLocation()
         setupViews()
     }
     
@@ -62,8 +63,8 @@ class SignupController: UIViewController, CLLocationManagerDelegate {
         langImage.width(60).height(60)
         locImage.width(60).height(60)
         
-        langSelect.width(280).height(150)
-        locSelect.width(280).height(50)
+        langSelect.width(280).height(120)
+        locSelect.width(280).height(120)
         
         
         langSelect.dataSource = self
