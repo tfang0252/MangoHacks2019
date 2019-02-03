@@ -81,7 +81,7 @@ class HomeController: UIViewController {
         
         menuBtn.sv(notificationImage)
         
-       let menuBarItem = UIBarButtonItem(customView: menuBtn)
+        let menuBarItem = UIBarButtonItem(customView: menuBtn)
         navigationItem.rightBarButtonItem = menuBarItem
         self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 28.0)!]
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "ic_menu_white_3x-1").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToggle))

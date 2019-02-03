@@ -12,6 +12,8 @@ import Stevia
 class LoginController: UIViewController, UITextViewDelegate {
 
     var selectedText = ""
+    let LoginStackView = UIStackView()
+    var isPressed = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +29,14 @@ class LoginController: UIViewController, UITextViewDelegate {
         let gif = NSData(contentsOfFile: filePath!)
         let webviewBG = UIWebView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         webviewBG.load(gif! as Data,mimeType: "image/gif", textEncodingName: "utf-8", baseURL: NSURL() as URL)
+        webviewBG.scrollView.contentInset = UIEdgeInsets(top: -20, left: 0, bottom: 0, right: 0)
         self.view.sv(webviewBG)
         webviewBG.fillContainer()
         
         let TitleLabel = UILabel()
         let UserName = UITextView()
         let Password = UITextView()
+        let ConfirmPassword = UITextView()
         let LoginStackView = UIStackView()
         let ButtonStackView = UIStackView()
         let SignInBtn = PostButtons()
@@ -41,6 +45,7 @@ class LoginController: UIViewController, UITextViewDelegate {
         LoginStackView.addArrangedSubview(TitleLabel)
         LoginStackView.addArrangedSubview(UserName)
         LoginStackView.addArrangedSubview(Password)
+        LoginStackView.addArrangedSubview(ConfirmPassword)
         LoginStackView.addArrangedSubview(ButtonStackView)
         
         TitleLabel.text = "OMNI"
@@ -49,8 +54,11 @@ class LoginController: UIViewController, UITextViewDelegate {
         UserName.textColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         Password.text = "Password"
         Password.textColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
+        ConfirmPassword.text = "Confirm Password"
+        ConfirmPassword.textColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         UserName.delegate = self
         Password.delegate = self
+        ConfirmPassword.delegate = self
         UserName.layer.borderWidth = 0.5
         UserName.layer.cornerRadius = 5.0
         UserName.layer.borderColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0).cgColor
@@ -59,6 +67,10 @@ class LoginController: UIViewController, UITextViewDelegate {
         Password.layer.borderWidth = 0.5
         Password.layer.cornerRadius = 5.0
         Password.layer.borderColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0).cgColor
+        
+        ConfirmPassword.layer.borderWidth = 0.5
+        ConfirmPassword.layer.cornerRadius = 5.0
+        ConfirmPassword.layer.borderColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0).cgColor
         
         SignInBtn.text("Sign In")
         SignUpBtn.text("Sign Up")
@@ -81,24 +93,38 @@ class LoginController: UIViewController, UITextViewDelegate {
         ButtonStackView.centerInContainer()
         ButtonStackView.width(200).height(30)
 
-        SignInBtn.addTarget(self, action: #selector(SignInBtnClicked), for: .touchUpInside)
+        if !isPressed {
+            LoginStackView.width(420).height(200)
+            SignInBtn.addTarget(self, action: #selector(SignInBtnClicked), for: .touchUpInside)
+        } else {
+            LoginStackView.width(420).height(250)
+            SignUpBtn.isHidden = true
+            SignInBtn.width(420)
+            SignInBtn.text("Create Profile")
+            SignInBtn.addTarget(self, action: #selector(SignInBtnClickedV2), for: .touchUpInside)
+        }
+
+        
         SignUpBtn.addTarget(self, action: #selector(SignUpBtnClicked), for: .touchUpInside)
         //add subviews
         LoginStackView.sv(
             TitleLabel,
             UserName,
             Password,
+            ConfirmPassword,
             ButtonStackView
         )
         
         TitleLabel.centerHorizontally()
         UserName.width(200).height(40)
         Password.width(200).height(40)
+        ConfirmPassword.width(200).height(40)
         TitleLabel.width(150).height(50)
         LoginStackView.distribution = .equalSpacing
         
         UserName.font = .systemFont(ofSize: 18)
         Password.font = .systemFont(ofSize: 18)
+        ConfirmPassword.font = .systemFont(ofSize: 18)
  
         LoginStackView.spacing = 10
         TitleLabel.font = UIFont(name: "Helvetica", size: 50)
@@ -111,7 +137,6 @@ class LoginController: UIViewController, UITextViewDelegate {
         )
         
         LoginStackView.centerInContainer()
-        LoginStackView.width(420).height(200)
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -131,14 +156,20 @@ class LoginController: UIViewController, UITextViewDelegate {
     
     @objc func SignInBtnClicked(sender: UIButton!) {
         //let containerViewController: ContainerController = ContainerController()
+        let containerViewController: ContainerController = ContainerController()
+        self.present(containerViewController, animated: true, completion: nil)
+    }
+    
+    @objc func SignInBtnClickedV2(sender: UIButton!) {
+        //let containerViewController: ContainerController = ContainerController()
         let containerViewController: SignupController = SignupController()
         self.present(containerViewController, animated: true, completion: nil)
     }
     
     @objc func SignUpBtnClicked(sender: UIButton!) {
         print("SignUp Button Pushed")
-//        let containerViewController: ContainerController = ContainerController()
-//
-//        self.present(containerViewController, animated: true, completion: nil)
+//        LoginStackView.width(420).height(200)
+        isPressed = true
+        self.viewDidLoad()
     }
 }
