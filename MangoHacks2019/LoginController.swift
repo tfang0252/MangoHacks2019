@@ -96,12 +96,14 @@ class LoginController: UIViewController, UITextViewDelegate {
         if !isPressed {
             LoginStackView.width(420).height(200)
             SignInBtn.addTarget(self, action: #selector(SignInBtnClicked), for: .touchUpInside)
+            SignUpBtn.isHidden = false
         } else {
             LoginStackView.width(420).height(250)
             SignUpBtn.isHidden = true
             SignInBtn.width(420)
             SignInBtn.text("Create Profile")
             SignInBtn.addTarget(self, action: #selector(SignInBtnClickedV2), for: .touchUpInside)
+            isPressed = false
         }
 
         
@@ -164,6 +166,7 @@ class LoginController: UIViewController, UITextViewDelegate {
         //let containerViewController: ContainerController = ContainerController()
         let containerViewController: SignupController = SignupController()
         self.present(containerViewController, animated: true, completion: nil)
+        isPressed = false
     }
     
     @objc func SignUpBtnClicked(sender: UIButton!) {

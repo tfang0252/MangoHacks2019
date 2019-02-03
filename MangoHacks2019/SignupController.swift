@@ -18,7 +18,7 @@ class SignupController: UIViewController, CLLocationManagerDelegate {
     let geocoder = CLGeocoder()
     var placemark: CLPlacemark?
     var cityNameStr: String = ""
-    var rowSelected: Int?
+    var rowSelected = 0
     
     var languageArray = ["English", "Chinese", "Hindi", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Arabic", "Romanian"]
     

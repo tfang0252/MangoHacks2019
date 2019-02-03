@@ -18,17 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection10.bundle")?.load()
-        
-        let apiToken: String? = "f073e470-8be7-40cf-8f77-614c8b8846bc"
-        EightBase.auth(with: "https://api.8base.com/cjrnngvv3000001r018xof97r", apiToken: apiToken) { result in
-            switch(result) {
-            case .success():
-                print("Successfully authentificated")
-                break
-            case .failure(let error):
-                print("Failed with \(error)")
-                break
-            }
+        var rootView: LoginController = LoginController()
+        if let window = self.window{
+            window.rootViewController = rootView
         }
         
         return true

@@ -22,7 +22,7 @@ class HomeController: UIViewController {
     var pastPostBtn: UIButton!
     var tableview: UITableView!
     var searchBar: UISearchBar!
-    var langInd: Int!
+    var langInd = 0
     
     
     var titleArr: [String] = [  "Authentic Chinese Place",
@@ -278,7 +278,7 @@ class HomeController: UIViewController {
 
 extension HomeController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return titleArr.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -296,16 +296,23 @@ extension HomeController: UITableViewDataSource{
             dictionary[element] = bodyeArr[index]
         }
         
-        
-        for (key,value) in dictionary{
-            SwiftGoogleTranslate.shared.translate(key, self.languages[self.langInd], "en") { (text1, error) in
-                if let t1 = text1 {
-                    SwiftGoogleTranslate.shared.translate(value, self.languages[self.langInd], "en") { (text2, error) in
-                        if let t2 = text2 {
-                            cell.postTitle.text = t1
-                            cell.postBody.text = t2
+        if(langInd == 0){
+            cell.postTitle.text = self.titleArr[indexPath.item]
+            cell.postBody.text = self.bodyeArr[indexPath.item]
+        }else{
+  
+            for (key,value) in dictionary{
+                SwiftGoogleTranslate.shared.translate(key, self.languages[self.langInd], "en") { (text1, error) in
+                    if let t1 = text1 {
+                        SwiftGoogleTranslate.shared.translate(value, self.languages[self.langInd], "en") { (text2, error) in
+                            if let t2 = text2 {
+                               
+                                cell.postTitle.text = t1
+                                cell.postBody.text = t2
+                                
+                            }
+                            
                         }
-                        
                     }
                 }
             }
