@@ -23,7 +23,44 @@ class HomeController: UIViewController {
     var tableview: UITableView!
     var searchBar: UISearchBar!
     
+    var titleArr: [String] = [  "Authentic Chinese Place",
+                                "Favorite Burger Place?",
+                                "Spanish to Chinese Translator Needed",
+                                "Looking for friends",
+                                "Looking for Dentist reccomendations",
+                                "Helped wanted for moving, will pay",
+                                "Chilean Empanadas",
+                                "SWFL meet up",
+                                "PokemonGO",
+                                "Free yogo class",
+                                "Taco Yummy Food Truck",
+                                "Latino Dessert Places"]
     
+    var bodyeArr: [String] = ["Looking for an authentic Chinese resturant in the FIU Area",
+                              "Where is your favorite Burger place in Miami?!",
+                              "Looking for a Spanish to Chinese Translator, will pay $25/hr",
+                              "Looking for anyone that is willing to go to the Nicklebacks Concert with me this weekend",
+                              "Need a recommendation for a cheap but good Dentist in the Miami area",
+                              "Need help moving some heavy furniture, will pay $100 a day",
+                              "Looking for a place that sells Chilean Empanadas",
+                              "Any car enthusiasts that want to drive out to the South West Florida car meet this weekend?",
+                              "Looking for people to play PokemonGo with in the FIU area",
+                              "I am teaching a free yoga class on Miami beach this Saturday if anyone is interested in attending, everyone is welcomed",
+                              "Does anyone know the locations of the Taco Yummy Food truck?",
+                              "What are the best latino dessert places in town?"]
+    
+    var categoryArr: [String] = [ "Food",
+                                  "Food",
+                                  "Help",
+                                  "ToDo",
+                                  "Help",
+                                  "Help",
+                                  "Food",
+                                  "Todo",
+                                  "Todo",
+                                  "Todo",
+                                  "Food",
+                                  "Food"]
     
     private let reuseIdentifer = "cell"
     
@@ -163,12 +200,13 @@ class HomeController: UIViewController {
 
 extension HomeController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return titleArr.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifer, for: indexPath) as! PostTVCell
-        
+        cell.postTitle.text = titleArr[indexPath.item]
+        cell.postBody.text = bodyeArr[indexPath.item]
         return cell
     }
 }
